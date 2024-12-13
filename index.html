@@ -11,9 +11,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-secondary">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid ">
-                <a class="navbar-brand ms-4" href="#">Navbar</a>
+                <a class="navbar-brand ms-4" href="#"><img
+                        src="https://cdn.discordapp.com/attachments/1299306232573722635/1317063121516625940/logo.png?ex=675d521e&is=675c009e&hm=2b723b7a33294c326e9b1dda488290ac641eb6737940f939580ca51c6eefe661&"
+                        style="width: 120px;"></a>
                 <div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,17 +24,18 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active me-4" aria-current="page" href="form.html">OFFICE</a>
+                                <a class="nav-link me-4 fw-bold text-white" aria-current="page" href="form.html">GO TO
+                                    OFFICE</a>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="w-75 ms-auto me-auto">
         <div id="errorAlert"></div>
-        <div class="d-flex align-items-center">
-            <h1>Products</h1>
+        <div class="d-flex align-items-center mt-3">
+            <h1 class="fw-bold fs-2">Products</h1>
             <div class="spinner-border ms-3" role="status" id="spinner">
                 <span class="visually-hidden">Loading...</span>
             </div>
@@ -40,7 +43,7 @@
         <div id="cardsDiv" class="row">
 
         </div>
-        
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

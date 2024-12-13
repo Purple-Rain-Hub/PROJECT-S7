@@ -31,20 +31,24 @@ async function getApi() {
 
 function printProducts(data) {
     for (let i = 0; i < data.length; i++) {
-        const cards = document.createElement("div")
-        cards.setAttribute("class", "card col-3")
+        const cards = document.createElement("div");
+        cards.setAttribute("class", "card col-3 mt-3");
+        cards.setAttribute("style", "height: 45em");
         cards.innerHTML = `
-                <img src="${data[i].imageUrl}" class="card-img-top">
+                <img src="${data[i].imageUrl}" class="card-img-top p-3" style="height: 350px">
                 <div class="card-body">
-                    <h5 class="card-title">${data[i].name}</h5>
-                    <h6 class="card-subtitle">${data[i].brand}</h6>
-                    <p class="card-text">${data[i].description}</p>
+                    <h5 class="card-title fw-bold">${data[i].name}</h5>
+                    <h6 class="card-subtitle text-secondary fw-medium">${data[i].brand}</h6>
+                    <p class="card-text mt-2">${data[i].description}</p>
                     <p class="card-text">${data[i].price}€</p>
                     <a href="details.html" class="btn btn-primary btnView">VIEW</a>
                     <a href="form.html" class="btn btn-primary btnEdit">EDIT</a>
                 </div>
         `
-        cardsDiv.appendChild(cards)
+        const divVuoto = document.createElement("div")
+        divVuoto.setAttribute("class", "col-1");
+        cardsDiv.appendChild(cards);
+        cardsDiv.appendChild(divVuoto);
     }
     const btnEdit = document.querySelectorAll(".btnEdit");
     for (let i = 0; i < data.length; i++) {
