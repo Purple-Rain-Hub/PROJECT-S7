@@ -30,10 +30,17 @@
         </nav>
     </header>
     <main>
-        <h1>Products</h1>
-        <div id="cardsDiv" class="row">
-            
+        <div id="errorAlert"></div>
+        <div class="d-flex align-items-center">
+            <h1>Products</h1>
+            <div class="spinner-border ms-3" role="status" id="spinner">
+                <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
+        <div id="cardsDiv" class="row">
+
+        </div>
+        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
